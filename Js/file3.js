@@ -35,5 +35,5 @@
 // console.log(value)
 
 let a
-let value = a ?? 10
+let value = a ?? 10 
 console.log(value)
