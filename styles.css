@@ -56,25 +56,29 @@ body {
 /* Main Section */
 .main-section {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem; /* Optional: more space between left & right */
   padding: 4rem 0;
   background: #fff;
 }
 
-.left {
+.left, .right {
   flex: 1;
+  min-width: 300px;
+}
+
+.left {
   padding-right: 2rem;
 }
 
 .right {
-  flex: 1;
   text-align: center;
 }
 
 .right img {
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
